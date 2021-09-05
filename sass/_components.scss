@@ -1,0 +1,13 @@
+.carousel {
+    position: absolute;
+    top: 0;
+
+    &__slide {
+        
+        &__image {
+            width: 100%;
+            background-position: top;
+        }
+
+    }
+}

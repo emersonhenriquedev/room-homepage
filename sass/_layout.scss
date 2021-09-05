@@ -1,0 +1,101 @@
+.header {
+    position: relative;
+}
+
+.navigation {
+    position: relative;
+    z-index: 1;
+    height: 11rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+
+    &.active {
+        background-color: #fff;
+        transition: all .7s;
+        .navigation__brand {
+            display: none;
+        }
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        position: relative;
+
+        %icon-before-after-shared {
+            content: "";
+            display: block;
+            background-color: currentColor;
+            width: 2rem;
+            height: .2rem;
+        }
+
+        &__icon {
+            color: #fff;
+            border-top: solid .2rem currentColor;
+            width: 2rem;
+            height: 2rem;
+
+            display: block;
+            transition: transform 5s;
+
+            &::before,
+            &::after {
+                @extend %icon-before-after-shared;
+                margin-top: .4rem;
+            }
+
+            &.active {
+                color: var(--color-primary-1);
+                border: none;
+
+                &::before,
+                &::after {
+                    @extend %icon-before-after-shared;
+                    margin-top: .4rem;
+                }
+
+                &::before {
+                    transform: rotate(45deg) translate(.4rem, .4rem);
+                }
+
+                &::after {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+
+    &__menu {
+        display: none;
+        
+        &__item {
+            list-style: none;
+            
+            & a {
+                font-size: 1.3rem;
+                font-weight: 700;
+                text-transform: lowercase;
+                text-decoration: none;
+                color: #000;
+
+            }
+        }
+
+        &.active {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+    
+    }
+
+    &__brand {
+        // display: none;
+        height: 1.2rem;
+        margin-left: 20%;
+    }
+}
