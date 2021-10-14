@@ -50,9 +50,27 @@
             </ul>
             <img src="img/logo.svg" alt="logo" class="navigation__brand">
         </nav>
+
+    </header>
+
+    <main>
         <div class="carousel">
             <div class="carousel__slide">
-                <img src="img/mobile-image-hero-1.jpg" alt="product 1" class="carousel__slide__image">
+                
+                <picture class="carousel__slide__image">
+                    <source media="(min-width: 700px)" srcset="img/desktop-image-hero-1.jpg" />
+                    <img src="img/mobile-image-hero-1.jpg" alt="product 1" class="carousel__slide__image" >
+                    
+                    <div class="carousel__controller">
+                        <a href="#" class="btn btn-left">
+                            <img src="img/icon-angle-left.svg" alt="back slide">
+                        </a>
+                        <a href="#" class="btn btn-right">
+                            <img src="img/icon-angle-right.svg" alt="foward slide">
+                        </a>
+                    </div>
+                </picture>
+
                 <div class="carousel__slide__text-container">
                     <h2 class="heading-primary">Discover innovative ways to decorate</h2>
                     <p class="paragraph">
@@ -62,10 +80,8 @@
                     </p>
                 </div>
             </div>
-            <div class="carousel__controller"></div>
         </div>
-    </header>
-
+    </main>
 
 
 
@@ -100,7 +116,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-  <script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

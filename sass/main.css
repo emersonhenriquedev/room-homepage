@@ -140,5 +140,23 @@ html {
 .carousel__slide__image {
   width: 100%;
   background-position: top;
+  position: relative;
+}
+
+.carousel__controller {
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  background-color: #000;
+  height: 6rem;
+  width: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

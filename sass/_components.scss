@@ -3,11 +3,31 @@
     top: 0;
 
     &__slide {
-        
         &__image {
             width: 100%;
             background-position: top;
+            position: relative;
         }
+
+    }
+
+    &__controller {
+        position: absolute;
+        bottom: 3px;
+        right: 0;
+        background-color: #000;
+        height: 6rem;
+        width: 12rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .btn {
+        // width: 50%;
+    }
+
+    .btn-right {
 
     }
 }
