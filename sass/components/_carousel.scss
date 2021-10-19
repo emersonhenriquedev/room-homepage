@@ -1,5 +1,5 @@
 .carousel {
-    position: absolute;
+    // position: absolute;
     top: 0;
 
     &__slide {
@@ -29,5 +29,18 @@
 
     .btn-right {
 
+    }
+
+    &__slide-text-container {
+        // background-color: darkcyan;
+        padding: 5rem 3rem;
+        font-size: 1.3rem;
+        
+        & p {
+            color: #bcbcbc;
+            color: #b2b2b2;
+            color: #a1a1a1;
+            line-height: 2.4rem;
+        }
     }
 }
