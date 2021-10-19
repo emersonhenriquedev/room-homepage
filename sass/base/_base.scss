@@ -1,7 +1,12 @@
-:root {
-  --color-primary-1: hsl(0, 0%, 63%);
-  --color-primary-2: hsl(0, 0%, 27%);
-}
+// :root {
+//   --color-primary-1: hsl(0, 0%, 63%);
+//   --color-primary-2: hsl(0, 0%, 27%);
+// }
+
+$color-primary-1:  hsl(0, 0%, 63%);
+$color-primary-2:  hsl(0, 0%, 27%);
+
+$font-1: 'Spartan', sans-serif;
 
 * {
     margin: 0;

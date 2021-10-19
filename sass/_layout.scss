@@ -1,5 +1,7 @@
 .header {
-    position: relative;
+    // position: relative;
+    position: absolute;
+    width: 100%;
 }
 
 .navigation {
@@ -49,7 +51,8 @@
             }
 
             &.active {
-                color: var(--color-primary-1);
+                // color: var(--color-primary-1);
+                color: $color-primary-1;
                 border: none;
 
                 &::before,
@@ -97,5 +100,17 @@
         // display: none;
         height: 1.2rem;
         margin-left: 20%;
+    }
+}
+
+.about-section {
+
+    &__description {
+        padding: 5rem 3rem;
+        font-size: 1.3rem;
+    }
+
+    &__img img {
+        width: 100%;
     }
 }

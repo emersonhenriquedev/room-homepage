@@ -1,0 +1,12 @@
+.call-to-action {
+    text-transform: uppercase;
+
+    &__button, &:visited, &:link {
+        color:$color-primary-2 ;
+        text-decoration: none;
+        margin-right: 3rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+}

@@ -1,4 +1,6 @@
-@import "base";
-@import "utilities";
+@import "base/base";
+@import "base/utilities";
+@import "base/typography";
 @import "layout";
-@import "components";
+@import "components/carousel";
+@import "components/call-to-action";
